@@ -26,6 +26,11 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
+
+  ## auto deploy
+  gem 'capistrano', '~> 3.0.1'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
 end
 group :development, :test do
   gem 'factory_girl_rails'
