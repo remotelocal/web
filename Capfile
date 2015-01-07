@@ -15,10 +15,12 @@ require 'capistrano/deploy'
 #   https://github.com/capistrano/rails/tree/master/assets
 #   https://github.com/capistrano/rails/tree/master/migrations
 #
-# require 'capistrano/rvm'
-require 'capistrano/rbenv'
-set :rbenv_type, :system
-set :rbenv_ruby, '2.1.1'
+require 'capistrano/rvm'
+# require 'capistrano/rbenv'
+# set :rbenv_type, :system
+# set :rbenv_ruby, '2.1.1'
+set :rvm_type, :system
+set :rvm_ruby, '2.1.1'
 # require 'capistrano/chruby'
  require 'capistrano/bundler'
  require 'capistrano/rails/assets'

@@ -1,5 +1,5 @@
 set :application, 'remotelocal'
-set :repo_url, 'git@github.com/remotelocal/web.git'
+set :repo_url, 'https://github.com/remotelocal/web.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 set :branch, 'master'
 

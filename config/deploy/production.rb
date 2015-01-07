@@ -15,9 +15,9 @@ role :db,  %w{54.68.62.105}
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server '54.68.62.105', user: 'ec2-user', roles: %w{web app}, ssh_options{
-  keys: %w(~/.ssh/remotelocal-1.pem)
-  auth_methods: %(publickey)
+server '54.68.62.105', user: 'ec2-user', roles: %w{web app}, ssh_options: {
+  keys: %w(~/.ssh/remotelocal-1.pem),
+  auth_methods: %w(publickey)
 }
 
 # you can set custom ssh options
