@@ -1,0 +1,16 @@
+before_install:
+  - sudo apt-get install my-fancy-package
+
+install:
+  - bundle install --path .bundle --binstubs
+  - npm install
+
+before_script:
+  - /etc/init.d/xvfb start
+
+script:
+  - capistranoでdeploy
+  - bundle exec rspec spec/
+
+after_script:
+  - rm testfile

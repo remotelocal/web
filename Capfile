@@ -16,7 +16,7 @@ require 'capistrano/deploy'
 #   https://github.com/capistrano/rails/tree/master/migrations
 #
 # require 'capistrano/rvm'
- require 'capistrano/rbenv'
+require 'capistrano/rbenv'
 set :rbenv_type, :system
 set :rbenv_ruby, '2.1.1'
 # require 'capistrano/chruby'
