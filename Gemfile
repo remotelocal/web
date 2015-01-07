@@ -14,6 +14,7 @@ gem 'devise'
 gem 'devise_invitable'
 gem 'mysql2'
 gem 'simple_form'
+gem 'therubyracer'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
